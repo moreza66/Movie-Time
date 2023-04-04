@@ -1,0 +1,206 @@
+body {
+    color: white;
+    background-image: url("../image/background-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header-movie-container {
+  height: 30vh;
+}
+
+.header-movie {
+    width: 40%;
+    background-color: #333;
+    color: rgb(231, 192, 142);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+.input {
+    width: 34%;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5%;
+    margin: 0 auto;
+    padding: 5% 0;
+}
+
+.starter-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 auto;
+    padding-bottom: 40%;
+}
+
+.storage-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    margin: 0 auto;
+    padding-bottom: 10%;
+}
+
+.display-movie-box {
+    height: 400px;
+    width: 200px;
+    margin-bottom: 25px;
+    margin: 20px;
+    font-size: 13px;
+}
+
+.display-movie-box:hover {
+    border: 5px solid transparent;
+    opacity: .8;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+}
+
+.button.is-link {
+    background-color: #333;
+    color: rgb(231, 192, 142);
+    border-color: transparent;
+}
+.button.is-link:hover {
+    background-color: rgb(231, 192, 142);
+    color: rgb(108, 105, 105);
+    border-color: transparent;
+    color: #fff;
+}
+
+.is-success.input, .is-success.textarea {
+    border-color: rgb(231, 192, 142);
+}
+
+.hide {
+    display: none;
+}
+
+#movie-selector {
+    padding: 0 6%;
+}
+
+
+#movie-information-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content:space-around;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+#movie-information {
+    width: 45%;
+}
+
+
+
+.stylePoster {
+    width: 30vw;
+    padding-right: 80px;
+    margin: 0 auto;
+}
+
+.styleTitle {
+    font-size: 30px;
+    width: 100%;
+}
+
+.styleYear {
+    font-size: 30px;
+}
+
+.styleGenre {
+    font-size: 23px;
+    width: 100%;
+}
+
+.stylePlot {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 5px;
+    width: 100%;
+}
+
+ .form-movie-title {
+    font-family: 'Anton', sans-serif;
+    font-weight:bold;
+    font-style: unset;
+    font-size: 12px;
+ }
+
+ .form-movie-year {
+    font-weight: bold;
+ }
+.form-movie-plot{
+    font-family: 'Cabin', sans-serif;
+}
+
+
+/* RESPONSIVE PAGE */
+
+@media screen and (max-width: 850px) {
+
+    #movie-selector {
+        padding: 0 6%;
+    }
+
+    .header-movie {
+        width: 70%;
+    }
+    #movie-information-container {
+        flex-direction: column;
+    }
+    .stylePoster {
+        width: 80vw;
+        padding-right: 0;
+        margin-bottom: 5%;
+    }
+    #movie-information {
+        width: 100%;
+    }
+    #input-box {
+        width: 50%;    
+    }
+
+    .starter-input-container {
+        padding-bottom: 200%;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+
+    #input-box {
+        width: 75%;
+    }
+
+    .input-container {
+        flex-direction: column;
+    }
+
+    .starter-input-container {
+        flex-direction: column;
+        
+    }
+
+    .button {
+        margin: 10px;
+    }
+  }
